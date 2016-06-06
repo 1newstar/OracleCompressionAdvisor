@@ -156,25 +156,25 @@ There could be no schema found with this name in ALL_USERS
 **Solution:**   
 Verify that the schema name is correct and access to ALL_OBJECTS is given.
 
-### ORA-20002: "No table with the name <table name> does exist for schema <schema name>!"
+### ORA-20002: "No table with the name <table name> does exist for schema <schema name>!"  
 **Cause:**  
 There could be no table found with that name for the specified schema.  
 **Solution:**  
 Verify that the schema and the table names are correctly specified!
 
-### ORA-20003: "Compression calculation has not been executed yet! Please run the CALC_COMP_RATIO routine first!"
+### ORA-20003: "Compression calculation has not been executed yet! Please run the CALC_COMP_RATIO routine first!"  
 **Cause:**  
 The user tried to retrieve the compression ratios or statistics without calculating them first.  
 **Solution:**   
 Before you query the compression ratios or statistics via GET_COMP_RATIO/GET_COMP_STATS you have to calculate them first by executing the CALC_COMP_RATIO procedure.
 
-### ORA-20004: "Scratch tablespace does not exist!"
+### ORA-20004: "Scratch tablespace does not exist!"  
 **Cause:**  
 The specified scratch tablespace does not exist in the database!  
 **Solution:**  
 Define a valid scratch tablespace name.
 
-### ORA-20005: "Scratch tablespace is not permanent but <tablespace type>!"
+### ORA-20005: "Scratch tablespace is not permanent but <tablespace type>!"  
 **Cause:**  
 The specified scratch tablespace is either an UNDO or TEMPORARY tablespace!  
 **Solution:**  
