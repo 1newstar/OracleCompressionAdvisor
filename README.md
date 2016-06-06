@@ -293,18 +293,18 @@ SELECT ... FROM TABLE(COMPRESSION_ADVISOR.GET_COMP_STATS());
 **Return Values:**  
 GET_COMP_STATS returns a table collection with following columns:  
 ```
-object_name         VARCHAR2	The table name that has been analyzed
-subobject_name      VARCHAR2	The partition name that has been analyzed in case the table is partitioned
-object_type         VARCHAR2	The type of table/partition
-compression_type    VARCHAR2	The calculated compression type – see COMPRESSION_ADVISOR Constants
-ratio               NUMBER	The compression ratio, i.e. how many times would the table/partition be compressed with that compression type
-sample_size         INTEGE	The amount of rows sampled for calculating the compression ratio
-bytes               INTEGE	The amount of bytes the table/partition would occupy with that compression type
-blocks_comp         INTEGE	The number of blocks needed to hold the sample size in compressed form
-blocks_uncomp       INTEGE	The number of blocks needed to hold the sample size in uncompressed form
-rows_comp           INTEGE	The amount of rows that fit into one block of the table in compressed form
-rows_uncomp         INTEGE	The amount of rows that fit into one block of the table in uncompressed form
-comp_type_str       VARCHAR	The compression type string; holds a string rather than  just the type itself as well as potential errors encountered during the analysis
+object_nam		VARCHAR2	The table name that has been analyzed
+subobject_nam		VARCHAR2	The partition name that has been analyzed in case the table is partitioned
+object_typ		VARCHAR2	The type of table/partition
+compression_type	VARCHAR2	The calculated compression type – see COMPRESSION_ADVISOR Constants
+rati			NUMBER	The compression ratio, i.e. how many times would the table/partition be compressed with that compression type
+sample_size		INTEGER	The amount of rows sampled for calculating the compression ratio
+bytes			INTEGER	The amount of bytes the table/partition would occupy with that compression type
+blocks_comp		INTEGER	The number of blocks needed to hold the sample size in compressed form
+blocks_uncomp		INTEGER	The number of blocks needed to hold the sample size in uncompressed form
+rows_comp		INTEGER	The amount of rows that fit into one block of the table in compressed form
+rows_uncomp		INTEGER	The amount of rows that fit into one block of the table in uncompressed form
+comp_type_str		VARCHAR2	The compression type string; holds a string rather than  just the type itself as well as potential errors encountered during the analysis
 ```
 
 ## Usage
