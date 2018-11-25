@@ -115,7 +115,7 @@ Privilege                     | Object            | Object Type
 The COMPRESSION_ADVISOR package uses the constants shown below:
 
 Constant           | TYPE     | Value                                   | Description
------------------- | -------- | --------------------------------------- | ------------------------ | ---------------------
+------------------ | -------- | --------------------------------------- | ------------------------
 `NONE`             | `NUMBER` | `DBMS_COMPRESSION.COMP_NOCOMPRESS`      | Gets current values from ALL_TABLES for the entire table (no analysis done, no sample size required) Table has to have valid statistics in order to give useful numbers!
 `ADVANCED`         | `NUMBER` | `DBMS_COMPRESSION.COMP_ADVANCED`        | Runs advisor for Oracle Advanced Compression
 `ROW`              | `NUMBER` | `DBMS_COMPRESSION.COMP_BLOCK`           | Runs advisor for row level compression
